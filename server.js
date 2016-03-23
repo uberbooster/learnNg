@@ -26,7 +26,7 @@ server.use(express.static(path.join(__dirname,'public')));
 *             this is the first thing that the will see.
 * */
 server.get('/', function(req, res){
-  res.sendFile('public/html/index.html', {root; __dirname});
+  res.sendFile('public/html/index.html', {root: __dirname});
 });
 
 
