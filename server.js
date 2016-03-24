@@ -29,18 +29,6 @@ server.get('/', function(req, res){
   res.sendFile('public/html/index.html', {root: __dirname});
 });
 
-server.get('/about', function(req, res){
-  res.sendFile('public/html/about.html', {root: __dirname});
-});
-
-server.get('/contact', function(req, res){
-  res.sendFile('public/html/contact.html', {root: __dirname});
-});
-
-server.get('/post', function(req, res){
-  res.sendFile('public/html/post.html', {root: __dirname});
-});
-
 
 //The server does not start listening for requests until it reaches this line.
 //The previous lines are just setting up the server application with all of the
